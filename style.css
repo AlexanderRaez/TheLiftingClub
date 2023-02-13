@@ -1,0 +1,119 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.navbar {
+    background-color: navy;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: darkblue;
+    color: white;
+}
+
+.navbar a.split {
+    float: right;
+    background-color: navy;
+    color: white;
+}
+
+.nav-right {
+    float: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.gallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    background-color: white;
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 2px;
+}
+
+/*creating the columns*/
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 2px;
+
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column video {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/*changes the column layout with browser size*/
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
