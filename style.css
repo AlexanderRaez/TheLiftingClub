@@ -8,6 +8,20 @@ h1 {
     font-size: 60px;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.image {
+    flex-basis: 70%;
+}
+
+.text {
+    order:2;
+}
+
 
 .navbar {
     background-color: navy;
